@@ -12,14 +12,7 @@ class TasksScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             showModalBottomSheet(
-                context: context,
-                builder: (context) => AddTaskScreen((newTaskTitle) {
-//                    TODO: Handling setState
-//                      setState(() {
-//                        tasks.add(Task(name: newTaskTitle));
-//                      });
-                      Navigator.pop(context);
-                    }));
+                context: context, builder: (context) => AddTaskScreen());
           },
           backgroundColor: Colors.lightBlueAccent,
           child: Icon(Icons.add)),
